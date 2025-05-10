@@ -17,7 +17,7 @@ pipeline {
 
         stage('Run JMeter Test') {
             steps {
-                sh """
+                bat """
                     mkdir -p ${RESULT_DIR}
                     ${JMETER_HOME}/bin/jmeter -n -t ${JMETER_TEST_FILE} -l ${RESULT_DIR}/results.jtl -e -o ${RESULT_DIR}/report
                 """

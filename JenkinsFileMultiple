@@ -4,7 +4,7 @@ pipeline {
     parameters {
         choice(
             name: 'TEST_PLAN',
-            choices: ['Home_Page.jmx', 'jenkinsfirsttest.jmx'],
+            choices: ['SecondJenkinsTest.jmx', 'jenkinsfirsttest.jmx'],
             description: 'Choose which JMeter test plan to run'
         )
     }
